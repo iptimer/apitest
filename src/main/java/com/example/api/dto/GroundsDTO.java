@@ -20,7 +20,7 @@ public class GroundsDTO {
   private List<GphotosDTO> gphotosDTOList = new ArrayList<>();
   private String location;
   private String sports;
-  private Long price;
+  private int price;
   private LocalDateTime regDate;
   private LocalDateTime modDate;
 }

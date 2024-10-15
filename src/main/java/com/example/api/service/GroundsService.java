@@ -30,7 +30,12 @@ public interface GroundsService {
   default Map<String, Object> dtoToEntity(GroundsDTO groundsDTO) {
     Map<String, Object> entityMap = new HashMap<>();
     Grounds grounds = Grounds.builder().gno(groundsDTO.getGno())
-        .gtitle(groundsDTO.getGtitle()).build();
+        .gtitle(groundsDTO.getGtitle())
+        .location(groundsDTO.getLocation())
+        .sports(groundsDTO.getSports())
+        .price(groundsDTO.getPrice())
+        .build();
+
     entityMap.put("grounds", grounds);
     List<GphotosDTO> gphotosDTOList = groundsDTO.getGphotosDTOList();
     if (gphotosDTOList != null && gphotosDTOList.size() > 0) {

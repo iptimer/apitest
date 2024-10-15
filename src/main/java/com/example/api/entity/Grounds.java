@@ -21,7 +21,7 @@ public class Grounds extends BasicEntity{
   private String gtitle;
   private String location;
   private String sports;
-  private Long price;
+  private int price;
 
   public void changeTitle(String gtitle) {this.gtitle = gtitle;}
 }
